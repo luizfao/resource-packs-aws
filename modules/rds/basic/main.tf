@@ -50,5 +50,7 @@ module "db" {
   monitoring_role_use_name_prefix       = var.monitoring_role_use_name_prefix
   monitoring_role_description           = var.monitoring_role_description
 
+  publicly_accessible = true
+
   parameters = var.parameters
 }

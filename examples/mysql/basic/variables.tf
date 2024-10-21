@@ -6,7 +6,7 @@ variable "region" {
 variable "resource_packs_aws_url" {
   description = "AWS Resource Pack git url"
   type        = string
-  default     = "https://github.com/humanitec-architecture/resource-packs-aws.git"
+  default     = "https://github.com/luizfao/resource-packs-aws.git"
 }
 
 variable "resource_packs_aws_rev" {
