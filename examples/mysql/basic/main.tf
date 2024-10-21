@@ -95,11 +95,11 @@ resource "aws_security_group" "mysql" {
   vpc_id      = var.vpc_id
 }
 
-resource "aws_vpc_security_group_ingress_rule" "k8s_node_mysql" {
-  security_group_id = aws_security_group.mysql.id
+# resource "aws_vpc_security_group_ingress_rule" "k8s_node_mysql" {
+#   security_group_id = aws_security_group.mysql.id
 
-  referenced_security_group_id = var.k8s_node_security_group_id
-  from_port                    = 3306
-  ip_protocol                  = "tcp"
-  to_port                      = 3306
-}
+#   referenced_security_group_id = var.k8s_node_security_group_id
+#   from_port                    = 3306
+#   ip_protocol                  = "tcp"
+#   to_port                      = 3306
+# }
